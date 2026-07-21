@@ -1,0 +1,22 @@
+{
+  "name": "zgent",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "check": "tsc --noEmit"
+  },
+  "pi": {
+    "extensions": [
+      "./zgent/index.ts"
+    ]
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.80.7",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.3"
+  }
+}
