@@ -31,7 +31,7 @@ A [Pi](https://github.com/earendil-works/pi-coding-agent) extension that registe
 
 ## Usage
 
-After Pi loads the extension, the following models become available under the `volcengine-agent` provider:
+After Pi loads the extension, the following models become available under the `volcengine-agent-plan` provider:
 
 | Model ID | API | Context Window | Max Tokens | Input |
 | --- | --- | --- | --- | --- |

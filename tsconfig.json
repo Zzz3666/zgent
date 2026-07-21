@@ -15,5 +15,5 @@
     "noEmit": false,
     "types": ["node"]
   },
-  "include": ["zgent/index.ts"]
+  "include": ["zgent/**/*.ts", "provider/**/*.ts"]
 }

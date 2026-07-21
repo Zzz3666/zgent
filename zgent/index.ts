@@ -1,7 +1,12 @@
 import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
-import volcengineAgentPlanProvider from '../provider/volcengine_agent_plan';
+import volcengineAgentPlanProvider from "../provider/volcengine-agent-plan";
 
 export default function (pi: ExtensionAPI) {
-  // Enable LLM Provider
-  pi.registerProvider("volcengine-agent", volcengineAgentPlanProvider);
+  try {
+    // Enable LLM Provider
+    pi.registerProvider("volcengine-agent-plan", volcengineAgentPlanProvider);
+  } catch (error) {
+    console.error("[zgent] Failed to register volcengine-agent-plan provider:", error);
+    throw error;
+  }
 }
