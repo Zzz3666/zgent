@@ -15,7 +15,7 @@ export default function (pi: ExtensionAPI) {
         contextWindow: 256000,
         maxTokens: 128000,
         compat: {
-          supportsDeveloperRole: false,
+          supportsDeveloperRole: true,
           maxTokensField: "max_tokens" as const,
         },
       },
@@ -28,7 +28,7 @@ export default function (pi: ExtensionAPI) {
         contextWindow: 256000,
         maxTokens: 128000,
         compat: {
-          supportsDeveloperRole: false,
+          supportsDeveloperRole: true,
           maxTokensField: "max_tokens" as const,
         },
       },
@@ -41,7 +41,7 @@ export default function (pi: ExtensionAPI) {
         contextWindow: 1024000,
         maxTokens: 384000,
         compat: {
-          supportsDeveloperRole: false,
+          supportsDeveloperRole: true,
           maxTokensField: "max_tokens" as const,
         },
       },
@@ -54,7 +54,7 @@ export default function (pi: ExtensionAPI) {
         contextWindow: 1024000,
         maxTokens: 256000,
         compat: {
-          supportsDeveloperRole: false,
+          supportsDeveloperRole: true,
           maxTokensField: "max_tokens" as const,
         },
       },
@@ -67,7 +67,7 @@ export default function (pi: ExtensionAPI) {
         contextWindow: 256000,
         maxTokens: 128000,
         compat: {
-          supportsDeveloperRole: false,
+          supportsDeveloperRole: true,
           maxTokensField: "max_tokens" as const,
         },
       },
@@ -80,7 +80,7 @@ export default function (pi: ExtensionAPI) {
         contextWindow: 256000,
         maxTokens: 128000,
         compat: {
-          supportsDeveloperRole: false,
+          supportsDeveloperRole: true,
           maxTokensField: "max_tokens" as const,
         },
       },
@@ -93,7 +93,7 @@ export default function (pi: ExtensionAPI) {
         contextWindow: 200000,
         maxTokens: 128000,
         compat: {
-          supportsDeveloperRole: false,
+          supportsDeveloperRole: true,
           maxTokensField: "max_tokens" as const,
         },
       },
@@ -106,7 +106,7 @@ export default function (pi: ExtensionAPI) {
         contextWindow: 512000,
         maxTokens: 128000,
         compat: {
-          supportsDeveloperRole: false,
+          supportsDeveloperRole: true,
           maxTokensField: "max_tokens" as const,
         },
       },
@@ -119,7 +119,7 @@ export default function (pi: ExtensionAPI) {
         contextWindow: 1024000,
         maxTokens: 128000,
         compat: {
-          supportsDeveloperRole: false,
+          supportsDeveloperRole: true,
           maxTokensField: "max_tokens" as const,
         },
       },
@@ -132,7 +132,7 @@ export default function (pi: ExtensionAPI) {
         contextWindow: 256000,
         maxTokens: 32000,
         compat: {
-          supportsDeveloperRole: false,
+          supportsDeveloperRole: true,
           maxTokensField: "max_tokens" as const,
         },
       },
@@ -145,7 +145,7 @@ export default function (pi: ExtensionAPI) {
         contextWindow: 256000,
         maxTokens: 32000,
         compat: {
-          supportsDeveloperRole: false,
+          supportsDeveloperRole: true,
           maxTokensField: "max_tokens" as const,
         },
       },
@@ -158,7 +158,7 @@ export default function (pi: ExtensionAPI) {
         contextWindow: 1024000,
         maxTokens: 384000,
         compat: {
-          supportsDeveloperRole: false,
+          supportsDeveloperRole: true,
           maxTokensField: "max_tokens" as const,
         },
       },
@@ -171,7 +171,7 @@ export default function (pi: ExtensionAPI) {
         contextWindow: 1024000,
         maxTokens: 128000,
         compat: {
-          supportsDeveloperRole: false,
+          supportsDeveloperRole: true,
           maxTokensField: "max_tokens" as const,
         },
       },
