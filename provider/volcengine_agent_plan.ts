@@ -1,4 +1,4 @@
-﻿import type { ProviderConfig } from "@earendil-works/pi-coding-agent";
+import type { ProviderConfig } from "@earendil-works/pi-coding-agent";
 
 const volcengineAgentPlanProvider: ProviderConfig = {
   name: "Volcengine Agent Plan",
@@ -129,8 +129,9 @@ const volcengineAgentPlanProvider: ProviderConfig = {
     {
       id: "kimi-k2.7-code",
       name: "kimi-k2.7-code",
-      reasoning: true,
       input: ["text", "image"],
+      api: "openai-completions",
+      reasoning: false,
       cost: { input: 4.5, output: 4.5, cacheRead: 0, cacheWrite: 0 },
       contextWindow: 256000,
       maxTokens: 32000,
