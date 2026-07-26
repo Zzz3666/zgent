@@ -56,9 +56,8 @@ Pi 加载该扩展后，以下模型将在 `volcengine-agent-plan` 提供商下�
 | `doubao-seed-2.0-mini` | `openai-responses` | 256K | 128K | 文本、图片 | ✓ | 0.25 | 0.25 |
 | `doubao-seed-2.0-lite` | `openai-responses` | 256K | 128K | 文本、图片 | ✓ | 0.5 | 0.5 |
 | `deepseek-v4-flash` | `openai-responses` | 1M | 384K | 文本 | ✓ | 0.5 | 0.5 |
+| `doubao-seed-2.1-turbo` | `openai-responses` | 256K | 256K | 文本、图片 | ✓ | 2.5 | 2.5 |
 | `doubao-seed-evolving` | `openai-responses` | 1M | 256K | 文本、图片 | ✓ | 2.5 | 2.5 |
-| `doubao-seed-2.0-code` | `openai-responses` | 256K | 128K | 文本、图片 | ✓ | 2.5 | 2.5 |
-| `doubao-seed-2.0-pro` | `openai-responses` | 256K | 128K | 文本、图片 | ✓ | 2.5 | 2.5 |
 | `minimax-m2.7` | `openai-responses` | 200K | 128K | 文本 | ✓ | 2.5 | 2.5 |
 | `minimax-m3` | `openai-responses` | 512K | 128K | 文本、图片 | ✓ | 2.5 | 2.5 |
 | `glm-5.2` | `openai-responses` | 1M | 128K | 文本 | ✓ | 4.5 | 4.5 |
@@ -68,7 +67,10 @@ Pi 加载该扩展后，以下模型将在 `volcengine-agent-plan` 提供商下�
 | `kimi-k3` | `openai-responses` | 1M | 128K | 文本、图片 | ✓ | 6.7 | 6.7 |
 
 > 价格单位为「元 / 百万 token」，数据来自火山引擎 Agent Plan 官方目录，可能随官方调整而变化。
-> **注意：** `kimi-k2.7-code` 使用 `openai-completions` API 而非 `openai-responses`，且不支持推理模式。
+> **注意：**
+> - `kimi-k2.7-code` 使用 `openai-completions` API 而非 `openai-responses`，且不支持推理模式。
+> - `deepseek-v4-flash` / `deepseek-v4-pro` 为尝鲜体验版，遇访问拥堵或频繁限流时建议切换其他模型。
+> - `doubao-seed-2.0-code` / `doubao-seed-2.0-pro` 已从列表移除（火山引擎标记即将下线）。
 
 ## 联网搜索工具
 

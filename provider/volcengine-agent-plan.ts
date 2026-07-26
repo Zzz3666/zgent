@@ -43,6 +43,18 @@ const volcengineAgentPlanProvider: ProviderConfig = {
       },
     },
     {
+      id: "doubao-seed-2.1-turbo",
+      name: "doubao-seed-2.1-turbo",
+      reasoning: true,
+      input: ["text", "image"],
+      cost: { input: 2.5, output: 2.5, cacheRead: 0, cacheWrite: 0 },
+      contextWindow: 256000,
+      maxTokens: 256000,
+      compat: {
+        supportsDeveloperRole: true,
+      },
+    },
+    {
       id: "doubao-seed-evolving",
       name: "doubao-seed-evolving",
       reasoning: true,
@@ -50,30 +62,6 @@ const volcengineAgentPlanProvider: ProviderConfig = {
       cost: { input: 2.5, output: 2.5, cacheRead: 0, cacheWrite: 0 },
       contextWindow: 1024000,
       maxTokens: 256000,
-      compat: {
-        supportsDeveloperRole: true,
-      },
-    },
-    {
-      id: "doubao-seed-2.0-code",
-      name: "doubao-seed-2.0-code",
-      reasoning: true,
-      input: ["text", "image"],
-      cost: { input: 2.5, output: 2.5, cacheRead: 0, cacheWrite: 0 },
-      contextWindow: 256000,
-      maxTokens: 128000,
-      compat: {
-        supportsDeveloperRole: true,
-      },
-    },
-    {
-      id: "doubao-seed-2.0-pro",
-      name: "doubao-seed-2.0-pro",
-      reasoning: true,
-      input: ["text", "image"],
-      cost: { input: 2.5, output: 2.5, cacheRead: 0, cacheWrite: 0 },
-      contextWindow: 256000,
-      maxTokens: 128000,
       compat: {
         supportsDeveloperRole: true,
       },
