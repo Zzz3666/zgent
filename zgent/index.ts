@@ -10,7 +10,7 @@ export default function (pi: ExtensionAPI) {
     console.error("[zgent] Failed to register volcengine-agent-plan provider:", error);
     throw error;
   }
-/*
+
   try {
   // Enable Web Search
     pi.registerTool(webSearchTool);
@@ -18,5 +18,5 @@ export default function (pi: ExtensionAPI) {
     console.error("[zgent] Failed to register tool:", error);
     throw error;
   }
-*/
+
 }
