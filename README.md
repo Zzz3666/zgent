@@ -155,7 +155,8 @@ npm run dev
 
 ### 工程化
 - [ ] **单元测试**：为 `web_search.ts` 的响应解析、错误判断、请求体构造补充自动化测试，减少回归风险。
-- [ ] **CI 流水线**：接入 GitHub Actions 跑 `npm run check`，保证 PR 类型检查通过。
+- [x] **CI 流水线**：接入 GitHub Actions 跑 `npm run check`，保证 PR 类型检查通过。
+  > 配置文件：`.github/workflows/ci.yml`，PR 到 `main` 分支时自动触发，执行 `npm ci && npm run check`。
 - [ ] **版本与变更日志**：引入语义化版本与 `CHANGELOG.md`，跟踪 provider/tool 的破坏性变更。
 
 ## 许可证
