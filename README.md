@@ -84,7 +84,7 @@ Pi 加载该扩展后，以下模型将在 `volcengine-agent-plan` 提供商下�
 | --- | --- | --- |
 | `Query` | string（必填） | 搜索词，1~100 字符，建议用简洁短语 |
 | `Count` | integer | 返回结果数，1~50，默认 10 |
-| `TimeRange` | string | 时间范围：`OneDay` / `OneWeek` / `OneMonth` / `OneYear`，或日期区间 `2024-12-30..2025-12-30`（顶层字段） |
+| `TimeRange` | string | 时间范围：`OneDay` / `OneWeek` / `OneMonth` / `OneYear`，或日期区间 `YYYY-MM-DD..YYYY-MM-DD`（使用真实当前日期，顶层字段） |
 | `Filter.Sites` | string | 限定站点，多域名用 `\|` 分隔，如 `aliyun.com\|mp.qq.com` |
 | `Filter.BlockHosts` | string | 屏蔽站点，多域名用 `\|` 分隔 |
 | `Filter.AuthInfoLevel` | integer | 0：不限权威度；1：仅返回高权威来源 |

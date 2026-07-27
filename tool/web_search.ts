@@ -77,7 +77,8 @@ const searchSchema = Type.Object({
     Type.String({
       description:
         "Restrict publication time. Possible values: 'OneDay', 'OneWeek', 'OneMonth', 'OneYear', " +
-        "or a date range like '2024-12-30..2025-12-30'. Leave empty for no restriction.",
+        "or a date range like 'YYYY-MM-DD..YYYY-MM-DD' (use the CURRENT real date, not a hardcoded year). " +
+        "Leave empty for no restriction.",
     })
   ),
 
@@ -122,7 +123,7 @@ const webSearchTool = defineTool({
   promptSnippet:
     "Use web_search for real-time or recent facts beyond your knowledge; query a concise phrase.",
   promptGuidelines: [
-    "Query must be a single concise phrase (1~100 chars), e.g. \"STM32 newest models 2025\" — not multiple unrelated keywords.",
+    "Query must be a single concise phrase (1~100 chars), e.g. \"newest STM32 models\" - not multiple unrelated keywords.",
     "If the user names a site (e.g. 'on Wikipedia'), set Filter.Sites to that domain.",
     "For very recent news, set top-level TimeRange to 'OneDay' or 'OneWeek'; for authoritative data, set Filter.AuthInfoLevel=1 or Industry='gov'.",
     "Search snippets may be outdated or inaccurate; cross-check important claims across multiple results.",
