@@ -67,24 +67,12 @@ const volcengineAgentPlanProvider: ProviderConfig = {
       },
     },
     {
-      id: "minimax-m2.7",
-      name: "minimax-m2.7",
-      reasoning: true,
-      input: ["text"],
-      cost: { input: 2.5, output: 2.5, cacheRead: 0, cacheWrite: 0 },
-      contextWindow: 200000,
-      maxTokens: 128000,
-      compat: {
-        supportsDeveloperRole: true,
-      },
-    },
-    {
       id: "minimax-m3",
       name: "minimax-m3",
       reasoning: true,
       input: ["text", "image"],
       cost: { input: 2.5, output: 2.5, cacheRead: 0, cacheWrite: 0 },
-      contextWindow: 512000,
+      contextWindow: 1024000,
       maxTokens: 128000,
       compat: {
         supportsDeveloperRole: true,
@@ -103,13 +91,13 @@ const volcengineAgentPlanProvider: ProviderConfig = {
       },
     },
     {
-      id: "kimi-k2.6",
-      name: "kimi-k2.6",
+      id: "glm-5.3",
+      name: "glm-5.3",
       reasoning: true,
-      input: ["text", "image"],
+      input: ["text"],
       cost: { input: 4.5, output: 4.5, cacheRead: 0, cacheWrite: 0 },
-      contextWindow: 256000,
-      maxTokens: 32000,
+      contextWindow: 1024000,
+      maxTokens: 128000,
       compat: {
         supportsDeveloperRole: true,
       },
@@ -144,7 +132,7 @@ const volcengineAgentPlanProvider: ProviderConfig = {
       name: "kimi-k3",
       reasoning: true,
       input: ["text", "image"],
-      cost: { input: 6.7, output: 6.7, cacheRead: 0, cacheWrite: 0 },
+      cost: { input: 10, output: 10, cacheRead: 0, cacheWrite: 0 },
       contextWindow: 1024000,
       maxTokens: 128000,
       compat: {
